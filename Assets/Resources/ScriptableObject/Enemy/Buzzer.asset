@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b548ce82cab34843b6f8df39766d8aa, type: 3}
+  m_Name: Buzzer
+  m_EditorClassIdentifier: 
+  hp: 12
+  damage: 1
+  moveSpeed: 3
+  rootNode: {fileID: 11400000, guid: fcbba8b72dc1218418ec1a6d0d9f73a1, type: 2}
+  hitaudio: {fileID: 0}
+  hitEffects:
+  - hitEffectPrefab: {fileID: 1809108783286918256, guid: f2eb2eb39c8995f4895828ebefdd7b44, type: 3}
+    needLookAt: 0
+  - hitEffectPrefab: {fileID: 2160192115367610047, guid: bb9b758dcdbacd443a97fa74caffbef8, type: 3}
+    needLookAt: 0
+  - hitEffectPrefab: {fileID: 745164402778257930, guid: fb96302a76754a2468a9c979112060db, type: 3}
+    needLookAt: 1
+  hitFeedback:
+    sound:
+    - {fileID: 8300000, guid: dcac4f0bd77e56c41a97dfe1bd75d855, type: 3}
+    - {fileID: 8300000, guid: 8cf1b674ab2ef834e8a1744df76f9c72, type: 3}
+    - {fileID: 8300000, guid: 66181057eb1840f428dc82f144ad47e3, type: 3}
+    animation: 
+    effectPrefabs: []
+  deadFeedback:
+    sound:
+    - {fileID: 8300000, guid: 2311e46f32c758b438ea4658ef45843a, type: 3}
+    animation: Dead
+    effectPrefabs:
+    - {fileID: 9121829609919116251, guid: 5b5ea271dcfcedb4f8d81f094b3b3a77, type: 3}
+    dropItems:
+    - prefab: {fileID: 7368302183580295128, guid: d7c228e106105824ab57b053e9e2878f, type: 3}
+      countRange: {x: 1, y: 4}
+      forceRange: {x: 500, y: 100}

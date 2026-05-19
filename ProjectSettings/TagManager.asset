@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - DownRecoil
+  - Recoil
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Enemy
+  - Character
+  - PlayerSlash
+  - HUD
+  - Camera
+  - Camera Confiner
+  - Breakable
+  - Drops
+  - Props
+  - Spike
+  - Obstacle
+  - Teleport
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3491569261
+    locked: 0
+  - name: Backmid
+    uniqueID: 1887484531
+    locked: 0
+  - name: BackEffect
+    uniqueID: 1485720355
+    locked: 0
+  - name: Midground
+    uniqueID: 4285427187
+    locked: 0
+  - name: Character
+    uniqueID: 2457037523
+    locked: 0
+  - name: Effect
+    uniqueID: 4266934469
+    locked: 0
+  - name: Midfore
+    uniqueID: 520861287
+    locked: 0
+  - name: Foreground
+    uniqueID: 1634108047
+    locked: 0

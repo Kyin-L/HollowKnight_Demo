@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996c615f67d29454ea6cb79f77c117e3, type: 3}
+  m_Name: Geo Small
+  m_EditorClassIdentifier: 
+  amount: 1
+  groundSounds:
+  - {fileID: 8300000, guid: 33f33c10ddc7035468e64526c8f28e8f, type: 3}
+  - {fileID: 8300000, guid: b697f00ea327e8443b1d7b792db46764, type: 3}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49ae1fd9cabf514898ee12e0b64b175, type: 3}
+  m_Name: Grass1
+  m_EditorClassIdentifier: 
+  hp: 1
+  feedbacks:
+  - sound: {fileID: 8300000, guid: 028c76bce2a9d674f98c60857f726bca, type: 3}
+    animation: Break
+    effectPrefabs:
+    - {fileID: 3837245160551335936, guid: 141c1a4925c0f0f46a67565653bf3375, type: 3}
+    dropItemsPrefabs: []
+  hitEffects:
+  - hitEffectPrefab: {fileID: 1809108783286918256, guid: f2eb2eb39c8995f4895828ebefdd7b44, type: 3}
+    needLookAt: 0

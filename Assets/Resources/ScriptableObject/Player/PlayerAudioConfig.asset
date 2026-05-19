@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e42a89e3825891458cdbbfb6dd4dc53, type: 3}
+  m_Name: PlayerAudioConfig
+  m_EditorClassIdentifier: 
+  walk: {fileID: 8300000, guid: b8b233fba88017947acb9d6b04c8faed, type: 3}
+  run: {fileID: 8300000, guid: e3f51deb486422849af1f6c9a905e42f, type: 3}
+  jump: {fileID: 8300000, guid: 14f50deac42a7474783092d2347875f8, type: 3}
+  doubleJump: {fileID: 8300000, guid: 2841a563684ced844a5f57d1c8ee61ae, type: 3}
+  softLand: {fileID: 8300000, guid: 28230062cbbcc7849b11bc2102ac37fb, type: 3}
+  hardLand: {fileID: 8300000, guid: 9cb7c5fc398e3ac43af39c158ddd32ec, type: 3}
+  forwardSlash1: {fileID: 8300000, guid: 2757ac29602b5954ebcff6047af0fd48, type: 3}
+  forwardSlash2: {fileID: 8300000, guid: 57db7ef51381c8541a93d84918b80421, type: 3}
+  upSlash: {fileID: 8300000, guid: 2757ac29602b5954ebcff6047af0fd48, type: 3}
+  downSlash: {fileID: 8300000, guid: 104c5b07a6e878e4c9563d56daeaa067, type: 3}
+  damaged: {fileID: 8300000, guid: 5b4a5caa5daf13841b54d6bb1f01e550, type: 3}

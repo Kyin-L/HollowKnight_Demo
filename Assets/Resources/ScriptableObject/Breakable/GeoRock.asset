@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49ae1fd9cabf514898ee12e0b64b175, type: 3}
+  m_Name: GeoRock
+  m_EditorClassIdentifier: 
+  hp: 4
+  feedbacks:
+  - sound: {fileID: 8300000, guid: 91a3c87e93d770349a2713fc5640ed01, type: 3}
+    animation: Hit
+    effectPrefabs:
+    - {fileID: 7058593063473856221, guid: 874a12d8833e9ac44a03e8ac7d11d17d, type: 3}
+    dropItemsPrefabs:
+    - prefab: {fileID: 7368302183580295128, guid: d7c228e106105824ab57b053e9e2878f, type: 3}
+      countRange: {x: 1, y: 3}
+      forceRange: {x: 500, y: 1000}
+  - sound: {fileID: 8300000, guid: 91a3c87e93d770349a2713fc5640ed01, type: 3}
+    animation: Hit
+    effectPrefabs:
+    - {fileID: 7058593063473856221, guid: 874a12d8833e9ac44a03e8ac7d11d17d, type: 3}
+    dropItemsPrefabs:
+    - prefab: {fileID: 7368302183580295128, guid: d7c228e106105824ab57b053e9e2878f, type: 3}
+      countRange: {x: 1, y: 3}
+      forceRange: {x: 500, y: 1000}
+  - sound: {fileID: 8300000, guid: 91a3c87e93d770349a2713fc5640ed01, type: 3}
+    animation: Hit
+    effectPrefabs:
+    - {fileID: 7058593063473856221, guid: 874a12d8833e9ac44a03e8ac7d11d17d, type: 3}
+    dropItemsPrefabs:
+    - prefab: {fileID: 7368302183580295128, guid: d7c228e106105824ab57b053e9e2878f, type: 3}
+      countRange: {x: 1, y: 3}
+      forceRange: {x: 500, y: 1000}
+  - sound: {fileID: 8300000, guid: 91a3c87e93d770349a2713fc5640ed01, type: 3}
+    animation: Break
+    effectPrefabs:
+    - {fileID: 430005993196008613, guid: 458ab346371e27a4488e2e418a5c040f, type: 3}
+    - {fileID: 1693894510849450075, guid: a121eb84d380e5d4fa8721910d14c22e, type: 3}
+    dropItemsPrefabs:
+    - prefab: {fileID: 7368302183580295128, guid: d7c228e106105824ab57b053e9e2878f, type: 3}
+      countRange: {x: 4, y: 6}
+      forceRange: {x: 500, y: 1000}
+  hitEffects:
+  - hitEffectPrefab: {fileID: 2160192115367610047, guid: bb9b758dcdbacd443a97fa74caffbef8, type: 3}
+    needLookAt: 0

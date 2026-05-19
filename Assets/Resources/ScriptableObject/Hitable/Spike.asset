@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4574121b29a7a1c45bb16275f9bc164d, type: 3}
+  m_Name: Spike
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: b0ef1f146c213cc4491ba24d35a4693c, type: 3}
+  animation: 
+  hitEffects:
+  - hitEffectPrefab: {fileID: 6652242179061746436, guid: 2bfb7b652ad2a1548842106bb4e53340, type: 3}
+    needLookAt: 1
