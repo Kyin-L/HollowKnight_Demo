@@ -1,2 +1,2 @@
 # HollowKnight_Demo
-使用空洞骑士素质制作的Demo
+使用空洞骑士素材制作的Demo
