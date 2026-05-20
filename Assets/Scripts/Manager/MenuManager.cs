@@ -30,8 +30,12 @@ public class MenuManager : MonoBehaviour
         m_animatorMainMenuFadeOutHash = Animator.StringToHash("MainMenuFadeOut");
         m_animatorOptionMenuFadeInHash = Animator.StringToHash("OptionMenuFadeIn");
         m_animatorOptionMenuFadeOutHash = Animator.StringToHash("OptionMenuFadeOut");
+    }
 
-
+    void OnDestroy()
+    {
+        m_eventManager.RemoveListener<ButtonPressedEventHandler>(OnButtonPressed);
+        m_eventManager.RemoveListener<ButtonSelectedEventHandler>(OnButtonSelected);
     }
 
     private void OnButtonPressed(ButtonPressedEventHandler handler)
@@ -98,11 +102,5 @@ public class MenuManager : MonoBehaviour
         });
 
         m_mainMenuAnimator.Play(m_animatorMainMenuFadeInHash);
-    }
-
-    private void OnDestroy()
-    {
-        m_eventManager.RemoveListener<ButtonPressedEventHandler>(OnButtonPressed);
-        m_eventManager.RemoveListener<ButtonSelectedEventHandler>(OnButtonSelected);
     }
 }

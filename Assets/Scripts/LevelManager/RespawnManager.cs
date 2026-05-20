@@ -23,6 +23,12 @@ public class RespawnManager : MonoBehaviour
         eventManager.AddListener<RespawnEventHandler>(Respawn);
     }
 
+    void OnDestroy()
+    {
+        eventManager.RemoveListener<ReplaceEventHandler>(Replace);
+        eventManager.RemoveListener<RespawnEventHandler>(Respawn);
+    }
+
     public void Enter(int id)
     {
         RespawnPoint[] points = GetComponentsInChildren<RespawnPoint>();

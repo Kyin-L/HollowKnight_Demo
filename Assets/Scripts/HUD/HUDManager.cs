@@ -41,6 +41,11 @@ public class HUDManager : MonoBehaviour
         eventManager.AddListener<ScreenToBlackEventHandler>(ScreenToBlack);
     }
 
+    void OnDestroy()
+    {
+        eventManager.RemoveListener<ScreenToBlackEventHandler>(ScreenToBlack);
+    }
+
     public void Show()
     {
         if (!isShow)

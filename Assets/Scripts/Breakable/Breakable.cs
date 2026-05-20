@@ -6,13 +6,13 @@ public class Breakable : Hitable
     [SerializeField] protected BreakableConfig breakableConfig => hitableConfig as BreakableConfig;
 
     protected bool isBreak = false;
-    protected new Collider2D collider;
+    protected Collider2D m_collider;
     protected Health health;
 
     protected override void Start()
     {
         base.Start();
-        collider = GetComponent<Collider2D>();
+        m_collider = GetComponent<Collider2D>();
         health = new Health(breakableConfig.hp, OnDamage, OnBreak);
     }
 
@@ -57,7 +57,7 @@ public class Breakable : Hitable
 
     protected virtual void OnBreak(DamageInfo info)
     {
-        collider.enabled = false;
+        m_collider.enabled = false;
         isBreak = true;
 
         OnDamage(info);

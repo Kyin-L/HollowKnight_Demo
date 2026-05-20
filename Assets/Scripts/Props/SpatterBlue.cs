@@ -5,7 +5,6 @@ using UnityEngine;
 public class SpatterBlue : MonoBehaviour
 {
     private Animator animator;
-    private new Collider2D collider;
 
     private int groundLayer;
     private readonly int groundHash = Animator.StringToHash("Ground");
@@ -13,7 +12,6 @@ public class SpatterBlue : MonoBehaviour
     {
         groundLayer = LayerMask.NameToLayer("Ground");
         animator = GetComponent<Animator>();
-        collider = GetComponent<Collider2D>();
     }
 
 

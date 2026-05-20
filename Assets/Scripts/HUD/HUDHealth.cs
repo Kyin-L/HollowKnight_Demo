@@ -42,6 +42,11 @@ public class HUDHealth : MonoBehaviour
         eventManager.AddListener<HpChangedEventHandler>(OnHpChanged);
     }
 
+    void OnDestroy()
+    {
+        eventManager.RemoveListener<HpChangedEventHandler>(OnHpChanged);
+    }
+
     private void OnHpChanged(HpChangedEventHandler handler)
     {
         int hp = handler.hp;

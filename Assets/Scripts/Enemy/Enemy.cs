@@ -13,7 +13,6 @@ public class Enemy : MonoBehaviour, IDamagable
     protected Transform effectTransform;
     protected Rigidbody2D rb;
     protected Animator animator;
-    protected new Collider2D collider;
 
     protected IPoolManager poolManager;
     protected IAudioManager audioManager;

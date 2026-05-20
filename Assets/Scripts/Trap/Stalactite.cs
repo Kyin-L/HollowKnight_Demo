@@ -4,7 +4,6 @@ public class Stalactite : MonoBehaviour
 {
     [SerializeField] private int damage = 1;
     [SerializeField] private AudioClip sound;
-    [SerializeField] private new Collider2D collider;
     [SerializeField] private Collider2D trigger;
 
     private IPoolManager poolManager;

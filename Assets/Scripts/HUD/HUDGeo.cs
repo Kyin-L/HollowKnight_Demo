@@ -24,6 +24,11 @@ public class HUDGeo : MonoBehaviour
         eventManager.AddListener<GeoChangedEventHandler>(OnGeoChanged);
     }
 
+    void OnDestroy()
+    {
+        eventManager.RemoveListener<GeoChangedEventHandler>(OnGeoChanged);
+    }
+
     public void Show()
     {
 

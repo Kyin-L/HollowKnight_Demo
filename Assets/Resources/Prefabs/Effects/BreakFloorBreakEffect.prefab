@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6900379884515823925}
   - component: {fileID: 6695776244408112040}
   - component: {fileID: 8710535817808176317}
-  - component: {fileID: -6871289695518583234}
   m_Layer: 0
   m_Name: BreakFloorBreakEffect
   m_TagString: Untagged
@@ -4834,18 +4833,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &-6871289695518583234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141103075864828858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32def359bf2096e44b25ee98aad80d15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &391402421135119920
 GameObject:
   m_ObjectHideFlags: 0

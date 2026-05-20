@@ -34,7 +34,7 @@ public class SceneLoadManager : SingletonBase<SceneLoadManager>, ISceneLoadManag
             sceneCross.transform.SetParent(GameObject.Find("GameManager").transform);
             m_sceneCross = sceneCross.GetComponentInChildren<Animator>();
         }
-            
+
         m_animatorFadeInHash = Animator.StringToHash("CrossfadeIn");
         m_animatorFadeOutHash = Animator.StringToHash("CrossfadeOut");
 

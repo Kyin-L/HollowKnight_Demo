@@ -5,7 +5,7 @@ using UnityEngine;
 public class BreakableConfig : HitableConfig
 {
     [Header("基础属性")]
-    [MinValue(1)]
+    [Min(1)]
     public int hp = 1;
 
     [Header("反馈列表")]

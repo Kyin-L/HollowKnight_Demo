@@ -18,6 +18,11 @@ public class Buzzer : Enemy
         eventManager.AddListener<ScreenToBlackEventHandler>(RemoveTarget);
     }
 
+    protected void OnDestroy()
+    {
+        eventManager.RemoveListener<ScreenToBlackEventHandler>(RemoveTarget);
+    }
+
     public override void TakeDamage(DamageInfo info)
     {
         if (isDead)

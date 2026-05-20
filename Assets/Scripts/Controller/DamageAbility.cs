@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using UnityEngine;
 using EventHandler.Respawn;
+using Cinemachine;
+
 public class DamageAbility : AbilityBase
 {
     private float invincibilityDuration;
 
     private bool isInvincible;
     private float invincibilityTimer;
+
+    private CinemachineImpulseSource impulse;
 
     private PlayerData playerData;
     private IEventManager eventManager;
@@ -21,6 +25,7 @@ public class DamageAbility : AbilityBase
     public DamageAbility(PlayerController playerController, PlayerContext context) : base(playerController, context)
     {
         knight = playerController.GetComponent<SpriteRenderer>();
+        impulse = playerController.GetComponent<CinemachineImpulseSource>();
 
         invincibilityDuration = context.playerConfig.invincibilityDuration;
         isInvincible = false;
@@ -60,6 +65,7 @@ public class DamageAbility : AbilityBase
         playerController.StartCoroutine(InvincibilityFlash(invincibilityDuration));
         context.damagedEffect.Play();
         context.playerAudio.PlayOneShotDamaged();
+        impulse.GenerateImpulse();
 
         if (playerData.HP <= 0)
         {
