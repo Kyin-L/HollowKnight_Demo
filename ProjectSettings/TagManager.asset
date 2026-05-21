@@ -26,7 +26,7 @@ TagManager:
   - Spike
   - Obstacle
   - Teleport
-  - 
+  - BackgroundBlur
   - 
   - 
   - 
@@ -43,7 +43,16 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: BackgroundBlur
+    uniqueID: 3159616453
+    locked: 0
+  - name: Background2
+    uniqueID: 56039761
+    locked: 0
+  - name: BackgroundLight
+    uniqueID: 2518916671
+    locked: 0
+  - name: Background1
     uniqueID: 3491569261
     locked: 0
   - name: Backmid
