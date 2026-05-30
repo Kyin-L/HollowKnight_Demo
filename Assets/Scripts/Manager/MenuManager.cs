@@ -44,7 +44,7 @@ public class MenuManager : MonoBehaviour
         switch (handler.buttonType)
         {
             case ButtonPressedEventHandler.ButtonType.GameStart:
-                LevelData data = new LevelData("Cave", 0);
+                LevelData data = new LevelData("Game", 0);
                 ManagerLocator.Get<ISceneLoadManager>().DelayLoadScene(data);
                 break;
             case ButtonPressedEventHandler.ButtonType.Options:

@@ -58,12 +58,20 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _ColorMask: 15
     - _FillAmount: 0
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
     - _WaveAmplitude: 0.05
     - _WaveCount: 2
     m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 0}
     - _FlowSpeed: {r: 0.5, g: 0.3, b: 0, a: 0}
     - _MainColor: {r: 1.7411011, g: 1.7411011, b: 1.7411011, a: 0}

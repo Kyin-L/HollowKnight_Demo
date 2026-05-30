@@ -28,7 +28,7 @@ public class HUDManager : MonoBehaviour
         health = GetComponentInChildren<HUDHealth>();
         geo = GetComponentInChildren<HUDGeo>();
         playableDirector = GetComponent<PlayableDirector>();
-        black = transform.Find("Black").GetComponent<Image>();
+        black = transform.Find("BlackMask").GetComponent<Image>();
         dataManager = ManagerLocator.Get<DataManager>();
     }
 

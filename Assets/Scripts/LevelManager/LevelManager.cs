@@ -1,10 +1,14 @@
 using UnityEngine;
 
 [DefaultExecutionOrder(-99)]
-public class LevelManager : MonoBehaviour
+public class LevelManager : MonoSingletonBase<LevelManager>
 {
-    [SerializeField] private GameObject player;
+    public GameObject player;
+    public GameObject ui;
+    public GameObject currentLevel;
+
     [SerializeField] private RespawnManager respawnManager;
+    [SerializeField] private GameConfig gameConfig;
     [SerializeField] private LevelConfig levelConfig;
 
     private DataManager dataManager;
@@ -13,11 +17,15 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        GetManager();
+
+        BuildLevel();
+    }
+
+    private void GetManager()
+    {
         dataManager = ManagerLocator.Get<DataManager>();
         dataManager.playerData.Respawn();
-
-        if (dataManager.levelData != null)
-            respawnManager.Enter(dataManager.levelData.enterpointID);
 
         audioManager = ManagerLocator.Get<IAudioManager>();
         audioManager.Play(levelConfig.BGM);
@@ -26,8 +34,10 @@ public class LevelManager : MonoBehaviour
         poolManager.Clear();
     }
 
-    void Update()
+    private void BuildLevel()
     {
-        
+        player = poolManager.Get(gameConfig.player);
+        ui = poolManager.Get(gameConfig.ui);
+        currentLevel = poolManager.Get(levelConfig.levelPrefab);
     }
 }

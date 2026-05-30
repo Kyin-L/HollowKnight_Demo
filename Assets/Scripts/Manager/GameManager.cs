@@ -7,6 +7,11 @@ public class GameManager : MonoSingletonBase<GameManager>
     {
         DontDestroyOnLoad(gameObject);
 
+        RegisterManager();
+    }
+
+    private void RegisterManager()
+    {
         RegisterMonoManager();
         RegisterEventManager();
 

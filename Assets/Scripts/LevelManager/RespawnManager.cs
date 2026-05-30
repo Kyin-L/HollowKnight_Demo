@@ -11,16 +11,21 @@ public class RespawnManager : MonoBehaviour
     public RespawnPoint respawnPoint;
 
     private IEventManager eventManager;
+    private DataManager dataManager;
+    private LevelManager levelManager;
 
-    private readonly string playerMovement = "PlayerMovement";
-    private readonly string playerAnimator = "PlayerAnimation";
-    private readonly string playerSignal = "PlayerSignal";
+    private readonly string playerTrackName = "Knight";
 
     void Start()
     {
         eventManager = ManagerLocator.Get<IEventManager>();
         eventManager.AddListener<ReplaceEventHandler>(Replace);
         eventManager.AddListener<RespawnEventHandler>(Respawn);
+
+        dataManager = ManagerLocator.Get<DataManager>();
+        levelManager = LevelManager.Instance;
+        player = levelManager.player;
+        Enter(dataManager.levelData.enterpointID);
     }
 
     void OnDestroy()
@@ -81,7 +86,7 @@ public class RespawnManager : MonoBehaviour
     {
         foreach (var output in director.playableAsset.outputs)
         {
-            if (output.streamName == playerMovement || output.streamName == playerAnimator)
+            if (output.streamName == playerTrackName)
             {
                 if (output.sourceObject is AnimationTrack)
                 {
@@ -95,9 +100,7 @@ public class RespawnManager : MonoBehaviour
     {
         foreach (var output in director.playableAsset.outputs)
         {
-            if (output.streamName == playerMovement
-                || output.streamName == playerAnimator
-                || output.streamName == playerSignal)
+            if (output.streamName == playerTrackName)
             {
                 if (output.sourceObject is AnimationTrack)
                 {

@@ -4,5 +4,6 @@ using UnityEngine;
 public class LevelConfig : ScriptableObject
 {
     public AudioClip BGM;
+    public GameObject levelPrefab;
 }
 
